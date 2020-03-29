@@ -5,6 +5,7 @@ import Vue from 'vue'
 // 引入组件
 import App from './App'
 import router from './router'
+import axios from 'axios'
 
 /**
  阻止启动生产消息，常用作指令
@@ -19,6 +20,8 @@ import router from './router'
  大概意思应该就是，消息提示的环境配置，设置为开发环境或者生产环境
  */
 Vue.config.productionTip = false
+// 添加实例属性
+Vue.prototype.$axios = axios
 
 /* eslint-disable no-new */
 new Vue({
