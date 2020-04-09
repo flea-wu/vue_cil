@@ -1,11 +1,11 @@
 <template>
   <div>
-<!--    <div>-->
-<!--      <Son :userList="userList"/>-->
-<!--    </div>-->
     <div>
-      <MyImage  v-for="item in data" v-bind:key="item.id" :imgaeNode="item"/>
+      <Son :userList="userList"/>
     </div>
+<!--    <div>-->
+<!--      <MyImage  v-for="item in data" v-bind:key="item.id" :imgaeNode="item"/>-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -30,12 +30,12 @@ export default {
     }
   },
   mounted () {
-    var url = 'https://gank.io/api/v2/hot/views/category/Girl/count/20'
-    this.$axios.get(url).then(res => {
-      console.log(url)
-      console.log(res.data)
-      this.data = res.data.data
-    })
+    // var url = 'https://gank.io/api/v2/hot/views/category/Girl/count/20'
+    // this.$axios.get(url).then(res => {
+    //   console.log(url)
+    //   console.log(res.data)
+    //   this.data = res.data.data
+    // })
   },
   // 组件标签映射
   components: {
