@@ -1,6 +1,6 @@
 <template>
     <div class="myImage">
-      <img class="myImageCss" :src="imgaeNode.url" :alt="imgaeNode.desc">
+      <img class="myImageCss" :src="imgaeNode.url">
     </div>
 </template>
 
