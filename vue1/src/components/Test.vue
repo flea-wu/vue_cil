@@ -4,6 +4,9 @@
 <!--      <Son :userList="userList"/>-->
 <!--    </div>-->
     <div>
+      <CountDown/>
+    </div>
+    <div>
       <MyImage  v-for="item in data" v-bind:key="item.id" :imgaeNode="item"/>
     </div>
     <div>
@@ -16,6 +19,7 @@
 import Son from './Son'
 import MyImage from './MyImage'
 import BeiAn from './BeiAn'
+import CountDown from './CountDown'
 
 export default {
   name: 'Test',
@@ -107,7 +111,8 @@ export default {
   components: {
     MyImage,
     Son,
-    BeiAn
+    BeiAn,
+    CountDown
   }
 }
 </script>
