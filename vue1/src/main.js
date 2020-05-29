@@ -6,6 +6,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import ElementUI from 'element-ui'
 
 /**
  阻止启动生产消息，常用作指令
@@ -22,6 +23,8 @@ import axios from 'axios'
 Vue.config.productionTip = false
 // 添加实例属性
 Vue.prototype.$axios = axios
+
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({
