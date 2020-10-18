@@ -1,10 +1,11 @@
 .Login {
-    // Vars
+    // 申明变量
   $--badge-padding:9px;
 
     // Support
 
     // Module
+    // &可以引用父级选择器，运用&可以在嵌套内层给父级选择器加hover和class
     & {
         //
     }
@@ -12,4 +13,6 @@
     // Facets
 
     // States
+
+    // @mixin可以将重复的代码提取出来，然后谁要用就@include引入就好了
 }

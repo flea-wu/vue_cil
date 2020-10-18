@@ -41,6 +41,11 @@ export default {
     //   console.log(res.data)
     //   this.data = res.data.data
     // })
+    if (window.console) {
+      console.log('想和我们共同打造世界最大中文互动问答平台吗？\n想让自己的成就在亿万用户面前展现吗？想让世界看得你的光芒吗？\n加入我们，在这里不仅是工作，投入你的时间和热情，滴滴汗水终会汇聚成不平凡的成果。\n期待你的加盟。')
+      console.log('公司诚聘前端工程师，%c简历投递地址http://www.badu.toudi.com', 'color:blue;font-weight:bold;')
+      console.log('请在邮件中注明%c来自:console', 'color:red;font-weight:bold;')
+    }
     this.data = [
       'https://img.nbjike.com/jietu/20200411222209.png',
       'https://img.nbjike.com/jietu/20200411222224.png',
